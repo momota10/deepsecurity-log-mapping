@@ -1,0 +1,138 @@
+{
+    "template": "dsaas-log-systemevent-*",
+    "mappings": {
+        "SystemEvent": {
+            "properties": {
+                "@timestamp": {
+                    "type": "date"
+                },
+                "ActionBy": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "AdministratorID": {
+                    "type": "long"
+                },
+                "Description": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 2048
+                        }
+                    }
+                },
+                "EventID": {
+                    "type": "integer"
+                },
+                "EventType": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 128
+                        }
+                    }
+                },
+                "LogDate": {
+                    "type": "date"
+                },
+                "ManagerNodeID": {
+                    "type": "long"
+                },
+                "ManagerNodeName": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Number": {
+                    "type": "integer"
+                },
+                "Origin": {
+                    "type": "short"
+                },
+                "OriginString": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 128
+                        }
+                    }
+                },
+                "Severity": {
+                    "type": "short"
+                },
+                "SeverityString": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Tags": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "TargetID": {
+                    "type": "long"
+                },
+                "TargetName": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "TargetType": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "TenantID": {
+                    "type": "integer"
+                },
+                "TenantName": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 128
+                        }
+                    }
+                },
+                "Title": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}

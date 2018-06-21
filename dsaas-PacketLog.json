@@ -1,0 +1,291 @@
+{
+    "template": "dsaas-log-packetlog-*",
+    "mappings": {
+        "PacketLog": {
+            "properties": {
+                "@timestamp": {
+                    "type": "date"
+                },
+                "Action": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "ActionString": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "DataFlags": {
+                    "type": "long"
+                },
+                "DataIndex": {
+                    "type": "long"
+                },
+                "DestinationIP": {
+                    "type": "ip"
+                },
+                "DestinationMAC": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "DestinationPort": {
+                    "type": "long"
+                },
+                "Direction": {
+                    "type": "long"
+                },
+                "DirectionString": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "DriverTime": {
+                    "type": "long"
+                },
+                "EventID": {
+                    "type": "integer"
+                },
+                "EventType": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 128
+                        }
+                    }
+                },
+                "Flags": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Flow": {
+                    "type": "long"
+                },
+                "FlowString": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Frame": {
+                    "type": "long"
+                },
+                "FrameString": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "HostAgentVersion": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "HostAssetValue": {
+                    "type": "long"
+                },
+                "HostCloudType": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "HostGroupID": {
+                    "type": "long"
+                },
+                "HostGroupName": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "HostID": {
+                    "type": "long"
+                },
+                "HostInstanceID": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "HostOS": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "HostOwnerID": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "HostSecurityPolicyID": {
+                    "type": "long"
+                },
+                "HostSecurityPolicyName": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Hostname": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Interface": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "LogDate": {
+                    "type": "date"
+                },
+                "Origin": {
+                    "type": "short"
+                },
+                "OriginString": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 128
+                        }
+                    }
+                },
+                "PacketSize": {
+                    "type": "long"
+                },
+                "Protocol": {
+                    "type": "short"
+                },
+                "ProtocolString": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Rank": {
+                    "type": "long"
+                },
+                "Reason": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "RepeatCount": {
+                    "type": "long"
+                },
+                "SourceIP": {
+                    "type": "ip"
+                },
+                "SourceMAC": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "SourcePort": {
+                    "type": "integer"
+                },
+                "Status": {
+                    "type": "integer"
+                },
+                "Tags": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "TenantID": {
+                    "type": "integer"
+                },
+                "TenantName": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 128
+                        }
+                    }
+                },
+                "Type": {
+                    "type": "long"
+                }
+            }
+        }
+    } 
+}
